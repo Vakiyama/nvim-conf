@@ -10,7 +10,11 @@ return require('packer').startup(function(use)
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.2',
 		-- or                            , branch = '0.1.x',
-		requires = { {'nvim-lua/plenary.nvim'} }
+		requires = {
+            {'nvim-lua/plenary.nvim'},
+            {'nvim-lua/popup.nvim'},
+            {'nvim-telescope/telescope-fzy-native.nvim'},
+        }
 	}
 	use ('nvim-treesitter/nvim-treesitter-context')
 	use {
@@ -65,4 +69,5 @@ return require('packer').startup(function(use)
             }
         end
     })
+    use ({ 'ThePrimeagen/git-worktree.nvim' })
 end)

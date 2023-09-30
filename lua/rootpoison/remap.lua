@@ -9,7 +9,6 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
-
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
@@ -34,6 +33,10 @@ vim.keymap.set("n", "<leader>b", vim.cmd.GitBlameToggle)
 
 -- visual block remap
 vim.keymap.set("n", "<leader>vb", "<C-v>")
+
+-- copilot toggle
+vim.api.nvim_set_keymap("n", "<leader>cd", ":Copilot disable<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>ce", ":Copilot enable<CR>", { noremap = true, silent = true })
 
 
 

@@ -65,4 +65,8 @@ return require('packer').startup(function(use)
 
     -- for zen coding in large codebases 
     use ( 'folke/twilight.nvim' )
+
+    use ( 'ThePrimeagen/refactoring.nvim' )
+    use ( 'windwp/nvim-ts-autotag' )
+
 end)

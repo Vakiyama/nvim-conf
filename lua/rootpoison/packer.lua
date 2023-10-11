@@ -61,5 +61,7 @@ return require('packer').startup(function(use)
     use ({ 'ThePrimeagen/git-worktree.nvim' })
 
     -- refactoring plugin 
-    use ({ 'ThePrimeagen/refactoring.nvim' })
+    use ( 'ThePrimeagen/refactoring.nvim' )
+    use ( 'windwp/nvim-ts-autotag' )
+
 end)

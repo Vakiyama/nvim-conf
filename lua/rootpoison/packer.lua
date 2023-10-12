@@ -64,5 +64,5 @@ return require('packer').startup(function(use)
     use ({ 'ThePrimeagen/refactoring.nvim' })
 
     -- for zen coding in large codebases 
-    use ( 'folke/twilight.nvim' )
+    use ( 'folke/twilight.nvim' )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
 end)

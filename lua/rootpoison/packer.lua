@@ -65,4 +65,6 @@ return require('packer').startup(function(use)
 
     -- for zen coding in large codebases 
     use ( 'folke/twilight.nvim' )
+
+    use 'stevearc/oil.nvim'
 end)
